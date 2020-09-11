@@ -1,0 +1,42 @@
+*{
+    @include main-font;
+}
+
+body{
+    background-color: $main-background-color;
+}
+
+
+h1{
+    text-align: center;
+}
+
+.nav-link{
+    @include nav-button-design;
+}
+
+
+.card{
+    min-height: 170px;
+    box-shadow: $main-box-shadow;
+    margin-bottom: 25px;
+}
+
+img{
+    box-shadow: $main-box-shadow;
+}
+
+footer{
+    margin-top: 25px;
+    p{
+        text-align: center;
+    }
+}
+
+h2{
+    margin: 30px 0 20px 0;
+}
+
+.btn-outline-primary{
+    @include primary-button-design;
+}

@@ -1,0 +1,27 @@
+@mixin main-font{
+    font-family: Helvetica, Arial, sans-serif;
+    color: $main-font-color;
+}
+
+@mixin nav-button-design{
+    @include main-font;
+    font-size: 18px;
+    color: $primary-button-color;
+    &:hover{
+        color: $main-background-color;
+        background-color: $primary-button-color;
+    }
+}
+
+@mixin primary-button-design{
+    @include main-font;
+    font-size: 18px;
+    color: $primary-button-color;
+    border-color: $primary-button-color;
+    width: 100%;
+    &:hover{
+        color: $main-background-color;
+        background-color: $primary-button-color;
+        border-color: $primary-button-color;
+    }
+}
